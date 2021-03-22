@@ -1,0 +1,21 @@
+@id,label,effect,target
+R5000054,neutralizing antibody m396,['R5000010'],
+R5000055,ritonavir,,"['R5000036', 'R5000038']"
+R5000056,zopiclone,,['R5000036']
+R5000057,colistin,,['R5000036']
+R5000058,pitavastatin,['R5000025'],['R5000036']
+R5000059,Bictegravir,,['R5000036']
+R5000060,praziquantel,['R5000025'],['R5000036']
+R5000061,lopinavir,,"['R5000038', 'R5000036']"
+R5000062,antibody m396,,['R5000045']
+R5000063,monoclonal antibody,['R5000010'],['R5000045']
+R5000064,SARS-CoV antibody,"['R5000010', 'R5000025']",['R5000045']
+R5000065,lopinavir/ritonavir,,['R5000036']
+R5000066,B-M27-VME,,['R5000038']
+R5000067,CR3022,['R5000025'],['R5000045']
+R5000068,perampanel,['R5000025'],['R5000036']
+R5000069,Prulifloxacin,,['R5000036']
+R5000070,MERS-CoV-specific human monoclonal antibody m336,,['R5000045']
+R5000071,Sofosbuvir/Velpatasvir,"['R5000025', 'R5000006', 'R5000033']",
+R5000072,eszopiclone,,['R5000036']
+R5000073,nelfinavir,"['R5000006', 'R5000025']",['R5000036']

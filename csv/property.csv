@@ -1,0 +1,63 @@
+@id,label,domain,range
+P1,species,C1,C9
+P2,genus,C1,C3
+P3,subGenus,C1,C4
+P4,family,C1,C5
+P5,subFamily,C1,C6
+P6,order,C1,C7
+P7,subOrder,C1,C8
+P8,subSpecies,C1,C10
+P9,class,C1,C11
+P10,phylum,C1,C13
+P11,subPhylum,C1,C12
+P12,host_is,"['C1', 'C16']",C18
+P13,parent,C1,C2
+P14,from_country,C16,Country
+P15,from_division,C16,State
+P16,from_location,C16,City
+P17,from_mutate_branch,"['C16', 'C17']",C17
+P18,produce,C1,C19
+P19,effect,C21,C1
+P20,interaction,C20,C19
+P21,binding,C19,C20
+P22,belong_to,C20,C18
+P23,express,C1,C22
+P24,translate,C22,C19
+P25,therapeutic_method,C1,Text
+P26,authors,C16,Text
+P27,originating_lab,C16,Text
+P28,submitting_lab,C16,Text
+P29,gisaid_epi_isl,C16,Integer
+P30,collection_date,C16,Date
+P31,nucleotide_mutation,C16,Text
+P32,aa_mutation,"['C16', 'C17']",Text
+P33,divergence,"['C16', 'C17']",Float
+P34,virus_type,C16,Text
+P35,drugbank_virus_id,C1,Text
+P36,drugbank_drug_id,C21,Text
+P37,atc_codes,C21,Text
+P38,brand_names,C21,Text
+P39,smiles_string_isomeric,C21,Text
+P40,chemical_formula,C21,Text
+P41,drug_type,C21,Text
+P42,experimental_water_solubility,C21,Text
+P43,molecular_weight_avg,C21,Float
+P44,indication,C21,Text
+P45,half_life,C21,Text
+P46,pathways,C21,Text
+P47,description,C21,Text
+P48,pharmacology,C21,Text
+P49,mechanism_of_action,C21,Text
+P50,toxicity,C21,Text
+P51,drug_category,C21,Text
+P52,uniprotkb_entry_name,"['C20', 'C19']",Text
+P53,similarity,C1,C1
+P54,property_is,C1,Text
+P55,virus_protein_interaction,C1,C20
+P56,target,C21,C19
+P57,cause,C1,C23
+P58,subject_is,C24,"['C1', 'C19', 'C20', 'C21']"
+P59,object_is,C24,"['C1', 'C19', 'C20', 'C21', 'C23', 'Text']"
+P60,predicate_is,C24,22-rdf-syntax-ns#Property
+P61,reference_is,C24,C25
+P62,title,C25,Text
