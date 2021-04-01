@@ -1,0 +1,43 @@
+load csv from "file:///class.csv" as line create (:Class {id:line[0],en_name:line[1],ch_name:line[2]});
+load csv from "file:///di.csv" as line create (:Disease {id:line[0],label:line[1]});
+load csv from "file:///drug.csv" as line create (:Drug {id:line[0],label:line[1],effect:line[2],target:line[3]});
+load csv from "file:///hp.csv" as line create (:HP {id:line[0],label:line[1]});
+load csv from "file:///Literature.csv" as line create (:Literature {id:line[0],label:line[1],link:line[2]});
+load csv from "file:///Property.csv" as line create (:Property {id:line[0],label:line[1],domain:line[2],range:line[3]});
+load csv from "file:///Reference.csv" as line create (:Reference {id:line[0],subject_is:line[1],predicate:line[2],object_is:line[3]});
+load csv from "file:///virus.csv" as line create (:Virus {id:line[0],label:line[1]});
+load csv from "file:///vp.csv" as line create (:VP {id:line[0],label:line[1]});
+
+load csv from "file:///relation/cause_v_di.csv" as line with line
+match (a:Virus),(b:Disease) where a.id=line[0] and b.id=line[1] create (a)-[r:CAUSE]->(b);
+
+load csv from "file:///relation/effect_drug_virus.csv" as line with line
+match (a:Drug),(b:Virus) where a.id=line[0] and b.id=line[1] create (a)-[r:EFFECT]->(b);
+
+load csv from "file:///relation/inter_v_p.csv" as line with line
+match (a:Virus),(b:HP) where a.id=line[0] and b.id=line[1] create (a)-[r:INTERACTION]->(b);
+
+load csv from "file:///relation/produce_v_vp.csv" as line with line
+match (a:Virus),(b:VP) where a.id=line[0] and b.id=line[1] create (a)-[r:PRODUCE]->(b);
+
+load csv from "file:///relation/referenceIs_re_lit.csv" as line with line
+match (a:Reference),(b:Literature) where a.id=line[0] and b.id=line[1] create (a)-[r:REFERENCE_IS]->(b);
+
+load csv from "file:///relation/similar_v_v.csv" as line with line
+match (a:Virus),(b:Virus) where a.id=line[0] and b.id=line[1] create (a)-[r:SIMILAR]->(b);
+
+load csv from "file:///relation/target_drug_vp.csv" as line with line
+match (a:Drug),(b:VP) where a.id=line[0] and b.id=line[1] create (a)-[r:TARGET]->(b);
+
+
+load csv from "file:///relation/predicate_r_p.csv" as line with line
+match (a:Reference),(b:Property) where a.id=line[0] and b.id=line[1] create (a)-[r:PREDICATE]->(b);
+
+
+load csv from "file:///relation/subject_r_v.csv" as line with line
+match (a:Reference),(b:Virus) where a.id=line[0] and b.id=line[1] create (a)-[r:OBJECT_IS]->(b);
+
+match (a:VP),(b:HP)
+where a.id='R5000045' and b.id in ['R5000050', 'R5000053', 'R5000049']
+create (a)-[r:BINDING]->(b);
+
