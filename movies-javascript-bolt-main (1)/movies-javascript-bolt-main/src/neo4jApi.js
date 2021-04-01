@@ -21,7 +21,7 @@ function searchMovies(queryString) {
   const session = driver.session({database: database});
   console.log('searching movie');
   return session.readTransaction((tx) =>
-      tx.run('MATCH (a:actors) \
+      tx.run('MATCH (a:Disease) \
       WHERE a.id =~$id \
       RETURN a',
       {id:queryString})
@@ -50,13 +50,13 @@ function getMovie(title) {
   const session = driver.session({database: database});
   console.log('getting movie');
   return session.readTransaction((tx) =>
-      tx.run("MATCH (a:Actors) WHERE a.id= $id RETURN a.id AS id, a.name_en AS name_en,a.subclassof AS subclassof ",{id:title}))
+      tx.run("MATCH (a:Disease) WHERE a.id= $id RETURN a.id AS id, a.name AS name ",{id:title}))
     .then(result => {
       if (_.isEmpty(result.records))
         return null;
 
       const record = result.records[0];
-      return new MovieCast(record.get('id'), record.get('name_en'),record.get('subclasof'));
+      return new MovieCast(record.get('id'), record.get('name'));
     })
     .catch(error => {
       throw error;
@@ -69,14 +69,14 @@ function getMovie(title) {
 function getGraph() {
   const session = driver.session({database: database});
   return session.readTransaction((tx) =>
-    tx.run('MATCH (m:actors)<-[:subclassof]-(a:actors) \
-    RETURN m.name_zh AS name_zh, collect(a.name_zh) AS cast \
+    tx.run('MATCH (m:Disease)<-[:SIMILAR]-(a:Disease) \
+    RETURN m.name AS name, collect(a.name) AS cast \
     LIMIT $limit', {limit: neo4j.int(100)}))
     .then(results => {
       const nodes = [], rels = [];
       let i = 0;
       results.records.forEach(res => {
-        nodes.push({title: res.get('name_zh'), label: 'name_zh'});
+        nodes.push({title: res.get('name'), label: 'name'});
         const target = i;
         i++;
 

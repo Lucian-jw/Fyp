@@ -18,8 +18,13 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <form role="search" class="navbar-form" id="search">
+                            <select id="s_type">
+                                <option value="name">Disease or Drug</option>
+                                <option value="label">HP VP or Label</option>
+                                <option value="produce">Virus</option>
+                              </select>
                             <div class="form-group">
-                                <input type="text" value="EU_standard" placeholder="Search for info id" class="form-control" name="search">
+                                <input type="text" value="R5000074" placeholder="Search for info id" class="form-control" name="search">
                             </div>
                             <button class="btn btn-default" type="submit">Search</button>
                         </form>

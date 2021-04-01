@@ -21,8 +21,8 @@ function showMovie(title) {
       $("#title").text(movie.id);
       //$("#poster").attr("src","https://neo4j-documentation.github.io/developer-resources/language-guides/assets/posters/"+encodeURIComponent(movie.title)+".jpg");
       const $list = $("#ancestor").empty();
-      $list.append($("<li>" +  "English name is " + movie.name_en + "</li>"));
-      $list.append($("<li>" +  "Is a subclass of " + movie.subclassof + "</li>"));
+      $list.append($("<li>" +  "English name is " + movie.name + "</li>"));
+      $list.append($("<li>" +  "Is a subclass of " + movie.id + "</li>"));
     }, "json");
 }
 
@@ -38,7 +38,7 @@ function search() {
         console.log('append movie');
         console.log(movies.length);
         movies.forEach(movie => {
-          $("<tr><td class='movie'>" + movie.id + "</td><td>" + movie.name_en + "</td><td>" + movie.subclassof + "</td></tr>").appendTo(t)
+          $("<tr><td class='movie'>" + movie.id + "</td><td>" + movie.name + "</td></tr>").appendTo(t)
             .click(function() {
               showMovie($(this).find("td.movie").text());
             });
