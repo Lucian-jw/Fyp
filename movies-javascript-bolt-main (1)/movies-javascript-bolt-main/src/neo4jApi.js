@@ -50,13 +50,13 @@ function getMovie(title) {
   const session = driver.session({database: database});
   console.log('getting movie');
   return session.readTransaction((tx) =>
-      tx.run("MATCH (a:Disease) WHERE a.id= $id RETURN a.id AS id, a.name AS name ",{id:title}))
+      tx.run("MATCH (a:Disease) WHERE a.id= $id RETURN a.id AS id, a.label AS label ",{id:title}))
     .then(result => {
       if (_.isEmpty(result.records))
         return null;
 
       const record = result.records[0];
-      return new MovieCast(record.get('id'), record.get('name'));
+      return new MovieCast(record.get('id'), record.get('label'));
     })
     .catch(error => {
       throw error;
