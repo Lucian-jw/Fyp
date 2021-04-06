@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新冠知识图谱</title>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+body {
+	background-color: white;
+	padding: 30px 40px;
+	text-align: center;
+    font-family: OpenSans-Light, PingFang SC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
+}
+
+#indicator {
+	position: absolute; 
+	left: 60px;
+	bottom: 120px;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+	
+}
+
+#indicator>div {
+    margin-bottom: 4px;
+}
+
+#indicator span {
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+.nodes circle:hover {
+    cursor: pointer;
+}
+
+.nodes circle.inactive {
+	display: none !important;
+}
+
+.texts text:hover {
+    cursor: pointer;
+}
+
+.texts text.inactive {
+    display: none !important;
+}
+
+.links line.inactive {
+    /*display: none !important;*/
+    stroke-opacity: 0;
+}
+
+.sidebar {
+  margin-top: 30px;
+  padding: 10;
+  width: 35%;
+  background-color: #f1f1f1;
+  display: flex;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 10%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+</style>
+<body>
+
+	<!-- 绘制标题样式 -->
+	<h1 style="color:black;font-size:32px;margin-bottom:0px;text-align:center;margin-left:40px;">Covid-19 visualization</h1>
+	
+	<!-- 第一个布局 绘制知识图谱主图 -->
+	<div class="sidebar">
+		<a class="active" href="/">Home</a>
+		<a href="/">Overview</a>
+		<a href="/">Search</a>
+		<a href="/vis/stat page.html">Statistics</a>
+		
+	</div>	
+	<div style="text-align: center; position:relative;">
+			<svg width=800 height=400  style="margin-right:80px;margin-bottom:-40px;border:3px;" id="svg1">
+			</svg>
+
+			<!-- 绘制图例 -->
+			<div id="indicator">
+			</div>
+
+		</div>
+
+		
+		
+	
+</body>
+
+<!-- 增加D3元素库 -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//定义svg变量将布局svg1选出来 
+		var svg = d3.select("#svg1"), 
+			width = svg.attr("width"), 
+			height = svg.attr("height");
+			function add( key , value ){
+    this.dataStore[key] = value;
+}
+function find( key ){
+    return this.dataStore[key];
+}
+function clear(){
+    for( var key in this.dataStore ){
+        delete this.dataStore[key];
+    }
+}
+			function Dictionary () {
+				this.dataStore = [];
+				this.add = add;         // 添加元素
+				this.find = find;       // 查找元素
+				this.clear = clear;     // 清空字典
+}
+            var directory = new Dictionary();
+
+            //添加元素, C21=drug C1=virus C19=Vp, C20 Hp, C23 disease;
+
+            directory.add( 'C21' , '#6ca46c' );
+            directory.add( 'C1' , '#4e88af');
+            directory.add( 'C19' , '#ca635f');
+            
+            directory.add( 'C23' , '#d2907c');
+            
+            directory.add( 'C20' , '#d6744d');
+
+		//定义name变量制作图标
+		var names = ['Drug', 'Virus', 'VP', 'Disease', 'HP'];
+		var node_colors = ['#6ca46c', '#4e88af', '#ca635f', '#d2907c', '#d6744d'];
+		var link_colors = ['#6c0000', '#4e0000', '#ca0000', '#d20000', '#d60000','black','red'];
+		var link_width = [1.6, 2.1, 1.9, 0.5, 1.2,2.5,2.3];
+		//5 6 0 2 1 4 3
+		//0.5 1.2 1.6 1.9 2.1 2.3 2.5
+		//背景颜色设置 补充CSS样式设置字体布局
+		for (var i=0; i < names.length; i++) {
+			$('#indicator').append("<div><span style=' background-color:" + node_colors[i] + "'></span>" + names[i] + "</div>");
+		}
+
+		//利用d3.forceSimulation()定义关系图 包括设置边link、排斥电荷charge、关系图中心点
+		var simulation = d3.forceSimulation()
+	        .force("link", d3.forceLink().id(function(d) {
+	            return d.id;
+	        }))
+	        .force("charge", d3.forceManyBody())
+	        .force("center", d3.forceCenter(width / 2, height / 2));
+
+	    //存储关系图的数据
+	    var graph;
+
+	    //定义d3.json请求python处理好的节点及边 请求成功返回数据，否则报错
+	    d3.json("relation.json", function(error, data) {
+	    	if(error) console.log(error) ;
+	    	graph = data;
+	    	console.log(graph);
+
+	    	//D3映射数据至HTML中
+	    	//g用于绘制所有边,selectALL选中所有的line,并绑定数据data(graph.links),enter().append("line")添加元素
+	    	//数据驱动文档,设置边的粗细
+	    	var link = svg.append("g").attr("class","links").selectAll("line").data(graph.links).enter()
+	    	.append("line").attr("stroke-width", function(d) {
+	    		//return Math.sqrt(d.value);
+	    		return link_width[d.type]; //所有线宽度均为1
+	    	}).attr("stroke","grey");
+			console.log(link);
+
+	    	//添加所有的点
+	    	//selectAll("circle")选中所有的圆并绑定数据,圆的直径为d.size
+	    	//再定义圆的填充色,同样数据驱动样式,圆没有描边,圆的名字为d.id
+	    	//call()函数：拖动函数,当拖动开始绑定dragstarted函数，拖动进行和拖动结束也绑定函数
+	    	var node = svg.append("g").attr("class", "nodes").selectAll("circle").data(graph.nodes).enter()
+	    	.append("circle").attr("r", function(d) {
+	    		return d.size*2;
+	    	}).attr("fill", function(d) {
+	    		//return colors[d.group];
+				return directory.find(d.class);
+	    	}).attr("stroke", "none").attr("name", function(d) {
+	    		return d.id;
+	    	}).call(d3.drag()
+	    		.on("start", dragstarted)
+	    		.on("drag", dragged)
+	    		.on("end", dragended)
+	    	);
+/*
+	    	//显示所有的文本 
+	    	//设置大小、填充颜色、名字、text()设置文本
+	    	//attr("text-anchor", "middle")设置文本居中
+	    	var text = svg.append("g").attr("class", "texts").selectAll("text").data(graph.nodes).enter()
+	    	.append("text").attr("font-size", function(d) {
+                return d.size*2;
+            }).attr("fill", function(d) {
+				//return colors[d.group];
+                return directory.find(d.class);
+            }).attr('name', function(d) {
+                return d.id;
+            }).text(function(d) {
+                return d.id;
+            }).attr('text-anchor', 'middle').call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended)
+            );
+			*/
+	    	//圆增加title
+	    	node.append("title").text(function(d) {
+	    		return d.id;
+	    	})
+	    	
+	    	//simulation中ticked数据初始化并生成图形
+	    	simulation
+	            .nodes(graph.nodes)
+	            .on("tick", ticked);
+
+	        simulation.force("link")
+	            .links(graph.links);
+
+	        //ticked()函数确定link线的起始点x、y坐标 node确定中心点 文本通过translate平移变化
+	        function ticked() {
+	            link
+	                .attr("x1", function(d) {
+	                    return d.source.x;
+	                })
+	                .attr("y1", function(d) {
+	                    return d.source.y;
+	                })
+	                .attr("x2", function(d) {
+	                    return d.target.x;
+	                })
+	                .attr("y2", function(d) {
+	                    return d.target.y;
+	                });
+
+	            node
+	                .attr("cx", function(d) {
+	                    return d.x;
+	                })
+	                .attr("cy", function(d) {
+	                    return d.y;
+	                });
+/*
+	            text.
+	            attr('transform', function(d) {
+	                return 'translate(' + d.x + ',' + (d.y + d.size)/2 + ')';
+	            });
+				*/
+	        }
+	    });
+
+
+	    // Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension
+	    // 本地json数据需要放置服务器中请求 XAMPP
+
+
+	    //拖动函数代码
+	    var dragging = false;
+
+	    //开始拖动并更新相应的点
+	    function dragstarted(d) {
+	        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+	        d.fx = d.x;
+	        d.fy = d.y;
+	        dragging = true;
+	    }
+
+	    //拖动进行中
+	    function dragged(d) {
+	        d.fx = d3.event.x;
+	        d.fy = d3.event.y;
+	    }
+
+	    //拖动结束
+	    function dragended(d) {
+	        if (!d3.event.active) simulation.alphaTarget(0);
+	        d.fx = null;
+	        d.fy = null;
+	        dragging = false;
+	    }
+
+		//为svg1父元素下的.nodes circle元素绑定鼠标进入事件
+$('#svg1').on('mouseenter', '.nodes circle', function(event) {
+	if(!dragging) {
+		//获取被选中元素的名字
+		var name = $(this).attr("name");
+
+		//选择#svg1 .nodes中所有的circle，再增加个class
+		d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d) {
+			//数据的id是否等于name,返回空
+			if(d.id==name) {
+				return '';
+			} 
+			//当前节点返回空，其他节点被隐藏起来(CSS设置隐藏)
+			else {
+				return "inactive"; //前面CSS定义 .nodes circle.inactive
+			}
+		});}
+});
+$('#svg1').on('mouseleave', '.nodes circle', function(event) {
+    d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');
+    d3.select('#svg1 .links').selectAll('line').attr('class', '');
+});
+
+	});
+</script>
+
+</html>

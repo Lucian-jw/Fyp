@@ -3,8 +3,9 @@ const _ = require('lodash');
 function MovieCast(name,id ) {
   _.extend(this, {
     
-    name: name,
-    id:id
+    label : name,
+    id:id,
+    link_type:'Cause'
   });
 }
 

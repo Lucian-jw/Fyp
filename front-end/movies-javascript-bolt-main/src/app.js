@@ -18,11 +18,12 @@ function showMovie(title) {
       if (!movie) return;
       console.log('get movie complete');
       console.log(movie.id);
-      $("#title").text(movie.id);
+      $("#title").text("Links info");
       //$("#poster").attr("src","https://neo4j-documentation.github.io/developer-resources/language-guides/assets/posters/"+encodeURIComponent(movie.title)+".jpg");
       const $list = $("#ancestor").empty();
-      $list.append($("<li>" +  "English name is " + movie.label + "</li>"));
-      $list.append($("<li>" +  "Is a subclass of " + movie.id + "</li>"));
+      $list.append($("<li>" +  "Link type is " + movie.link_type + "</li>"));
+      $list.append($("<li>" +  "The Virus ID is " + movie.label + "</li>"));
+      $list.append($("<li>" +  "Virus name is " + movie.id + "</li>"));
     }, "json");
 }
 
@@ -36,9 +37,9 @@ function search() {
 
       if (movies) {
         console.log('append movie');
-        console.log(movies.length);
+        console.log(movies);
         movies.forEach(movie => {
-          $("<tr><td class='movie'>" + movie.id + "</td><td>" + movie.label + "</td></tr>").appendTo(t)
+          $("<tr><td class='movie'>" + movie.id + "</td><td>" + movie.label + "</td><td>" + movie.labels + "</td></tr>").appendTo(t)
             .click(function() {
               showMovie($(this).find("td.movie").text());
             });

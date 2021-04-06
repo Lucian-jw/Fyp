@@ -32,7 +32,7 @@ function searchMovies(queryString) {
         console.log('found nothing actually');
       return result.records.map(record => {
         console.log('success on searching');
-        console.log(record);
+        console.log(record.get('a'));
         return new Movie(record.get('a'));
       });
     })
@@ -50,7 +50,7 @@ function getMovie(title) {
   const session = driver.session({database: database});
   console.log('getting movie');
   return session.readTransaction((tx) =>
-      tx.run("MATCH (a:Disease) WHERE a.id= $id RETURN a.id AS id, a.label AS label ",{id:title}))
+      tx.run("MATCH (a:Virus)-[r:CAUSE]->(b:Disease) WHERE b.id=~$id RETURN a.id AS id, a.label AS label",{id:title}))
     .then(result => {
       if (_.isEmpty(result.records))
         return null;
