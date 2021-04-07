@@ -63,7 +63,7 @@ body {
 .sidebar {
   margin-top: 30px;
   padding: 10;
-  width: 35%;
+  width: 30%;
   background-color: #f1f1f1;
   display: flex;
   height: 100%;
@@ -103,7 +103,22 @@ body {
     float: none;
   }
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
 <body>
 
@@ -116,8 +131,8 @@ body {
 		<a href="/">Overview</a>
 		<a href="/">Search</a>
 		<a href="/vis/stat page.html">Statistics</a>
-		
 	</div>	
+
 	<div style="text-align: center; position:relative;">
 			<svg width=800 height=400  style="margin-right:80px;margin-bottom:-40px;border:3px;" id="svg1">
 			</svg>
@@ -126,10 +141,30 @@ body {
 			<div id="indicator">
 			</div>
 
-		</div>
+	</div>
 
-		
-		
+	<table>
+		<tr>
+		  <th>Type</th>
+		  <th>Name</th>
+		  <th>Similarity</th>
+		</tr>
+		<tr>
+		  <td>Drug</td>
+		  <td>Some drug</td>
+		  <td>10%</td>
+		</tr>
+		<tr>
+		  <td>Disease</td>
+		  <td>Some disease</td>
+		  <td>20%</td>
+		</tr>
+		<tr>
+		  <td>Virus</td>
+		  <td>Some virus</td>
+		  <td>30%</td>
+		</tr>
+	</table>
 	
 </body>
 
@@ -221,7 +256,7 @@ function clear(){
 				return directory.find(d.class);
 	    	}).attr("stroke", "none").attr("name", function(d) {
 	    		return d.id;
-	    	}).call(d3.drag()
+	    	}).attr("type",function(d){return d.class}).call(d3.drag()
 	    		.on("start", dragstarted)
 	    		.on("drag", dragged)
 	    		.on("end", dragended)
@@ -339,6 +374,37 @@ $('#svg1').on('mouseenter', '.nodes circle', function(event) {
 			}
 		});}
 });
+
+$('#svg1').on('mouseenter', '.nodes circle', function(event) {
+	//获取被选中元素的名字
+	var name = $(this).attr("name");
+	var type = $(this).attr("type");
+
+	//选择#svg1 .nodes中所有的circle，再增加个class
+	d3.select('#svg1 .nodes').selectAll('circle').attr('class', function(d) {
+		//数据的id是否等于name,返回空
+		if(d.id==name) {
+			return '';
+		} 
+		//当前节点返回空，否则其他节点循环判断是否被隐藏起来(CSS设置隐藏)
+		else {
+			//links链接的起始节点进行判断,如果其id等于name则显示这类节点
+			//注意: graph=data
+			for (var i = 0; i < graph.links.length; i++) {
+				//如果links的起点等于name，并且终点等于正在处理的则显示
+                if (graph.links[i]['source'].id == name && graph.links[i]['target'].id == d.id) {
+                    return '';
+                }
+                if (graph.links[i]['target'].id == name && graph.links[i]['source'].id == d.id) {
+                    return '';
+                }
+            }
+        
+			return "inactive"; //前面CSS定义 .nodes circle.inactive
+		}
+	});
+});
+
 $('#svg1').on('mouseleave', '.nodes circle', function(event) {
     d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');
     d3.select('#svg1 .links').selectAll('line').attr('class', '');

@@ -3,16 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>Welcome Page</title>
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <style>
         h1{
             display:flex;
-            align-items: center;
+            text-align: center;
             }
         div{
-            width:100px;
-            height:100px;
+            width:10px;
+            height:10px;
         }
-        div.row{
+        div.brief{
             display:flex;
             width:500px;
             height:500px;
@@ -31,18 +34,47 @@
         #img2 {
             position: fixed;
             left:700px;
-            top:170px;    
+            top:160px;    
+        }
+        #svg1{
+            display: none;
+            padding: 0px;
+            top:-10px;
+        }
+        #svg2{
+            display: none;
+        }
+        #big_img1{
+            top:-20px;
         }
         </style>
     </head>
     <body>
 
-    <h1>COVID Welcome page</h1>
+    <h1>COVID Statistics page</h1>
 
-    <div id="row">
+    <div id="brief">
         <div id="virus"><object id='img1' data="image/virus.svg" type="image/svg+xml" width="700px" height="700px" inline></object></div>
         <div id="object"><object id='img2' data="image/object.svg" type="image/svg+xml" width="570px" height="570px" inline></object></div>
     </div>
+        
+    <div id="svg1">
+        <object id="big_img1" data="image/virus.svg" type="image/svg+xml" width="1000px" height="1000px" inline></object>
+    </div>
+
+    <div id="svg2">
+        <div id="object"><object id='img2' data="image/object.svg" type="image/svg+xml" width="1000px" height="1000px" inline></object></div>
+    </div>
 
     </body>
+    <script>
+        $('#img1').on('mouseenter', function(event) {
+            $('#brief').css("display","none");
+            $('#svg1').css("display","block");
+        });
+        $('#svg1').on('mouseleave', function(event) {
+            $('#brief').css("display","flex");
+            $('#svg1').css("display","none");
+        });
+    </script>
 </html>
