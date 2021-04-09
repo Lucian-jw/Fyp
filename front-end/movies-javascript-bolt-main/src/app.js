@@ -9,6 +9,10 @@ $(function () {
     e.preventDefault();
     search();
   });
+  $("#s_type").change(e => {
+    e.preventDefault();
+    renderGraph();
+  });
 });
 
 function showMovie(title) {
@@ -16,8 +20,8 @@ function showMovie(title) {
     .getMovie(title)
     .then(movie => {
       if (!movie) return;
-      console.log('get movie complete');
-      console.log(movie.id);
+      //console.log('get movie complete');
+      //console.log(movie.id);
       $("#title").text("Links info");
       //$("#poster").attr("src","https://neo4j-documentation.github.io/developer-resources/language-guides/assets/posters/"+encodeURIComponent(movie.title)+".jpg");
       const $list = $("#ancestor").empty();
@@ -29,23 +33,23 @@ function showMovie(title) {
 
 function search() {
   const query = $("#search").find("input[name=search]").val();
-  console.log(query);
+  //console.log(query);
   api
     .searchMovies(query)
     .then(movies => {
       const t = $("table#results tbody").empty();
 
       if (movies) {
-        console.log('append movie');
-        console.log(movies);
+        //console.log('append movie');
+        //console.log(movies);
         movies.forEach(movie => {
           $("<tr><td class='movie'>" + movie.id + "</td><td>" + movie.label + "</td><td>" + movie.labels + "</td></tr>").appendTo(t)
             .click(function() {
               showMovie($(this).find("td.movie").text());
             });
-            console.log('movie added');
+            //console.log('movie added');
         });
-        console.log('search movie complete');
+        //console.log('search movie complete');
         const first = movies[0];
         if (first) {
           showMovie(first.id);

@@ -19,7 +19,7 @@ console.log(`Database running at ${neo4jUri}`)
 
 function searchMovies(queryString) {
   const session = driver.session({database: database});
-  console.log('searching movie');
+  //console.log('searching movie');
   return session.readTransaction((tx) =>
       tx.run('MATCH (a:Disease) \
       WHERE a.id =~$id \
@@ -27,12 +27,12 @@ function searchMovies(queryString) {
       {id:queryString})
     )
     .then(result => {
-      console.log('found sth');
+      //console.log('found sth');
       if (_.isEmpty(result.records))
         console.log('found nothing actually');
       return result.records.map(record => {
-        console.log('success on searching');
-        console.log(record.get('a'));
+        //console.log('success on searching');
+        //console.log(record.get('a'));
         return new Movie(record.get('a'));
       });
     })
@@ -68,14 +68,18 @@ function getMovie(title) {
 
 function getGraph() {
   const session = driver.session({database: database});
+  var type = $("#s_type").val();
+  console.log(type);
   return session.readTransaction((tx) =>
-    tx.run('MATCH (m:Disease)<-[:SIMILAR]-(a:Disease) \
-    RETURN m.name AS name, collect(a.name) AS cast \
-    LIMIT $limit', {limit: neo4j.int(100)}))
+    tx.run('MATCH p=(a)-[r]->(c) \
+    WHERE a.labels=$type or c.labels=$type\
+    RETURN a.label AS name ,collect(c.label) AS cast  ', {type: type}))
     .then(results => {
+      console.log("get some node of the class");
       const nodes = [], rels = [];
       let i = 0;
       results.records.forEach(res => {
+        console.log(res.get('name'));
         nodes.push({title: res.get('name'), label: 'name'});
         const target = i;
         i++;

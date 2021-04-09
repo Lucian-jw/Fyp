@@ -24,6 +24,7 @@ body {
     text-align: left;
     color: black;
     font-size: 12px;
+	margin-left: 90px;
 	
 }
 
@@ -38,7 +39,7 @@ body {
     position: relative;
     top: 2px;
     margin-right: 8px;
-}
+	}
 .nodes circle:hover {
     cursor: pointer;
 }
@@ -63,7 +64,6 @@ body {
 .sidebar {
   margin-top: 30px;
   padding: 10;
-  width: 30%;
   background-color: #f1f1f1;
   display: flex;
   height: 100%;
@@ -73,7 +73,7 @@ body {
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
 }
  
@@ -134,7 +134,7 @@ tr:nth-child(even) {
 	</div>	
 
 	<div style="text-align: center; position:relative;">
-			<svg width=800 height=400  style="margin-right:80px;margin-bottom:-40px;border:3px;" id="svg1">
+			<svg width=800 height=400  style="margin-right:-20px;margin-left:-20px;margin-top:-40px;margin-bottom:-20px;border:3px;" id="svg1">
 			</svg>
 
 			<!-- 绘制图例 -->
@@ -210,6 +210,7 @@ function clear(){
 		var node_colors = ['#6ca46c', '#4e88af', '#ca635f', '#d2907c', '#d6744d'];
 		var link_colors = ['#6c0000', '#4e0000', '#ca0000', '#d20000', '#d60000','black','red'];
 		var link_width = [1.6, 2.1, 1.9, 0.5, 1.2,2.5,2.3];
+		var class_type = ['Cause','Effect','Target','Binding','Interaction','Produce','Similar'];
 		//5 6 0 2 1 4 3
 		//0.5 1.2 1.6 1.9 2.1 2.3 2.5
 		//背景颜色设置 补充CSS样式设置字体布局
@@ -261,7 +262,7 @@ function clear(){
 	    		.on("drag", dragged)
 	    		.on("end", dragended)
 	    	);
-/*
+			/*
 	    	//显示所有的文本 
 	    	//设置大小、填充颜色、名字、text()设置文本
 	    	//attr("text-anchor", "middle")设置文本居中
@@ -284,6 +285,11 @@ function clear(){
 	    	//圆增加title
 	    	node.append("title").text(function(d) {
 	    		return d.id;
+	    	})
+			
+			//连线增加type
+			link.append("title").text(function(d) {
+	    		return class_type[d.type];
 	    	})
 	    	
 	    	//simulation中ticked数据初始化并生成图形
