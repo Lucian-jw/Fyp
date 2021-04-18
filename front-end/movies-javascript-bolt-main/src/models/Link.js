@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-function MovieCast(name,id ) {
+function Link(name,id ) {
   _.extend(this, {
     
     label : name,
@@ -9,4 +9,4 @@ function MovieCast(name,id ) {
   });
 }
 
-module.exports = MovieCast;
+module.exports = Link;

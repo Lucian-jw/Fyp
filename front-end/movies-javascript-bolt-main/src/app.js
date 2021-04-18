@@ -1,9 +1,22 @@
 require('file-loader?name=[name].[ext]!./assets/images/favicon.ico')
+const Similarity = require('./models/similarity');
 const api = require('./neo4jApi');
+/*
+var express = require('express');
+var app = express();
+var path = require('path');
+
+app.get('/front', function(req, res) {
+  res.sendFile(path.join(__dirname + '/assets/frontpage.html'));
+});
+
+//app.listen(8000);
+*/
 
 $(function () {
-  renderGraph();
+  //renderGraph();
   search();
+  ////findSimilarity();
 
   $("#search").submit(e => {
     e.preventDefault();
@@ -15,19 +28,19 @@ $(function () {
   });
 });
 
-function showMovie(title) {
+function showNode(title) {
   api
-    .getMovie(title)
-    .then(movie => {
-      if (!movie) return;
-      //console.log('get movie complete');
-      //console.log(movie.id);
+    .getLink(title)
+    .then(link => {
+      if (!link) return;
+      console.log('get link complete');
+      //console.log(link.id);
       $("#title").text("Links info");
       //$("#poster").attr("src","https://neo4j-documentation.github.io/developer-resources/language-guides/assets/posters/"+encodeURIComponent(movie.title)+".jpg");
       const $list = $("#ancestor").empty();
-      $list.append($("<li>" +  "Link type is " + movie.link_type + "</li>"));
-      $list.append($("<li>" +  "The Virus ID is " + movie.label + "</li>"));
-      $list.append($("<li>" +  "Virus name is " + movie.id + "</li>"));
+      $list.append($("<li>" +  "Link type is " + link.link_type + "</li>"));
+      $list.append($("<li>" +  "The Virus ID is " + link.label + "</li>"));
+      $list.append($("<li>" +  "Virus name is " + link.id + "</li>"));
     }, "json");
 }
 
@@ -35,29 +48,34 @@ function search() {
   const query = $("#search").find("input[name=search]").val();
   //console.log(query);
   api
-    .searchMovies(query)
-    .then(movies => {
+    .searchNodes(query)
+    .then(nodes => {
       const t = $("table#results tbody").empty();
 
-      if (movies) {
-        //console.log('append movie');
-        //console.log(movies);
-        movies.forEach(movie => {
-          $("<tr><td class='movie'>" + movie.id + "</td><td>" + movie.label + "</td><td>" + movie.labels + "</td></tr>").appendTo(t)
+      if (nodes) {
+        //console.log('append node');
+        //console.log(nodes);
+        nodes.forEach(node => {
+          $("<tr><td class='movie'>" + node.id + "</td><td>" + node.label + "</td><td>" + node.labels + "</td></tr>").appendTo(t)
             .click(function() {
-              showMovie($(this).find("td.movie").text());
+              showNode($(this).find("td.movie").text());
             });
-            //console.log('movie added');
+            //console.log('node added');
         });
-        //console.log('search movie complete');
-        const first = movies[0];
+        //console.log('search node complete');
+        const first = nodes[0];
         if (first) {
-          showMovie(first.id);
+          showNode(first.label);
         }
       }
     });
 }
-
+function findSimilarity(){
+  api.searchSimilarity().
+      then(nodes=>{
+        console.log('found Similarity');
+      });
+}
 function renderGraph() {
   const width = 800, height = 800;
   const force = d3.layout.force()

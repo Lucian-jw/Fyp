@@ -120,6 +120,12 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 </style>
+<script>
+	function myFunction(){
+	window.location.href='localhost:8080/frontpage.html';
+}
+
+</script>
 <body>
 
 	<!-- 绘制标题样式 -->
@@ -129,6 +135,7 @@ tr:nth-child(even) {
 	<div class="sidebar">
 		<a class="active" href="/">Home</a>
 		<a href="/">Overview</a>
+		<button onclick="myFunction()">Click me</button>
 		<a href="/">Search</a>
 		<a href="/vis/stat page.html">Statistics</a>
 	</div>	
@@ -170,6 +177,7 @@ tr:nth-child(even) {
 
 <!-- 增加D3元素库 -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="neo4j-web.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		//定义svg变量将布局svg1选出来 
@@ -392,6 +400,7 @@ $('#svg1').on('mouseleave', '.nodes circle', function(event) {
     d3.select('#svg1 .nodes').selectAll('circle').attr('class', '');
     d3.select('#svg1 .links').selectAll('line').attr('class', '');
 });
+
 
 	});
 </script>

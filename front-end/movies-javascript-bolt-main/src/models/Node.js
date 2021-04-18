@@ -1,12 +1,15 @@
 const _ = require('lodash');
 
-function Movie(_node) {
+function Node(_node,labels) {
   _.extend(this, _node.properties);
   /*
   if (this.id) {
     console.log(this.id);
   }
   */
+
+  _.extend(this, {labels:labels});
+  //console.log(this.labels);
 }
 
-module.exports = Movie;
+module.exports = Node;
