@@ -43,18 +43,20 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({template: 'src/assets/index.html'}),
+    new HtmlWebpackPlugin({
+      filename: 'index',
+      template: 'src/assets/index.html'}),
     
     new HtmlWebpackPlugin({
-      filename: 'frontpage.html',
+      filename: 'frontpage',
       template: 'src/assets/frontpage.html'
   }),
     new HtmlWebpackPlugin({
-      filename: 'statistics.html',
+      filename: 'statistics',
       template: 'src/assets/statistics.html'
   }),
     new HtmlWebpackPlugin({
-      filename: 'd3-visualization.html',
+      filename: 'visualization',
       template: 'src/assets/d3-visualization.html'
     }),
   

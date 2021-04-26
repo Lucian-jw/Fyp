@@ -81,7 +81,7 @@ function getLink(title) {
   const session = driver.session({database: database});
   //console.log('getting movie');
   return session.readTransaction((tx) =>
-      tx.run("MATCH (a)-[r]->(b) WHERE b.label=$id OR a.label=$id RETURN a.id AS id, a.label AS label",{id:title}))
+      tx.run("MATCH (a)-[r]->(b) WHERE b.label=$id OR a.label=$id RETURN a.id AS aid,b.id AS bid, a.label AS label,type(r) AS link",{id:title}))
     .then(result => {
       if (_.isEmpty(result.records)){
         console.log("no link here");
@@ -89,7 +89,12 @@ function getLink(title) {
       }
       console.log("some link here");
       const record = result.records[0];
-      return new Link(record.get('id'), record.get('label'));
+      return new Link(record.get('aid'),record.get('bid'), record.get('label'),record.get('link'));
+      /*
+      return result.records.map(record => {
+        return new Link (record.get('id'),record.get('label'),record.get('link'));
+      });
+      */
     })
     .catch(error => {
       throw error;

@@ -39,8 +39,8 @@ function showNode(title) {
       //$("#poster").attr("src","https://neo4j-documentation.github.io/developer-resources/language-guides/assets/posters/"+encodeURIComponent(movie.title)+".jpg");
       const $list = $("#ancestor").empty();
       $list.append($("<li>" +  "Link type is " + link.link_type + "</li>"));
-      $list.append($("<li>" +  "The Virus ID is " + link.label + "</li>"));
-      $list.append($("<li>" +  "Virus name is " + link.id + "</li>"));
+      $list.append($("<li>" +  "The link is between " + link.aid + " and " + link.bid + "</li>"));
+      $list.append($("<li>" +  "Name is " + link.name + "</li>"));
     }, "json");
 }
 
