@@ -1,0 +1,3639 @@
+﻿[
+  {
+    "a": {
+"identity": 21,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "neutralizing antibody m396",
+"id": "R5000054",
+"effect": "['R5000010']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 22,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000055",
+"label": "ritonavir",
+"target": "['R5000036', 'R5000038']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 22,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000055",
+"label": "ritonavir",
+"target": "['R5000036', 'R5000038']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 23,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000056",
+"label": "zopiclone",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 24,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000057",
+"label": "colistin",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 25,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000058",
+"label": "pitavastatin",
+"effect": "['R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 25,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000058",
+"label": "pitavastatin",
+"effect": "['R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 26,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000059",
+"label": "Bictegravir",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 27,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000060",
+"label": "praziquantel",
+"effect": "['R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 27,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000060",
+"label": "praziquantel",
+"effect": "['R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 28,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000061",
+"label": "lopinavir",
+"target": "['R5000038', 'R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 28,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000061",
+"label": "lopinavir",
+"target": "['R5000038', 'R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 29,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000062",
+"label": "antibody m396",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 30,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "monoclonal antibody",
+"id": "R5000063",
+"effect": "['R5000010']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 30,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "monoclonal antibody",
+"id": "R5000063",
+"effect": "['R5000010']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 31,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "SARS-CoV antibody",
+"id": "R5000064",
+"effect": "['R5000010', 'R5000025']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 31,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "SARS-CoV antibody",
+"id": "R5000064",
+"effect": "['R5000010', 'R5000025']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 31,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "SARS-CoV antibody",
+"id": "R5000064",
+"effect": "['R5000010', 'R5000025']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 32,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "lopinavir/ritonavir",
+"id": "R5000065",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 33,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000066",
+"label": "B-M27-VME",
+"target": "['R5000038']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 34,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000067",
+"label": "CR3022",
+"effect": "['R5000025']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 34,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000067",
+"label": "CR3022",
+"effect": "['R5000025']",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 35,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000068",
+"label": "perampanel",
+"effect": "['R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 35,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000068",
+"label": "perampanel",
+"effect": "['R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 36,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000069",
+"label": "Prulifloxacin",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 37,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000070",
+"label": "MERS-CoV-specific human monoclonal antibody m336",
+"target": "['R5000045']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 38,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "Sofosbuvir/Velpatasvir",
+"id": "R5000071",
+"effect": "['R5000025', 'R5000006', 'R5000033']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 38,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "Sofosbuvir/Velpatasvir",
+"id": "R5000071",
+"effect": "['R5000025', 'R5000006', 'R5000033']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 38,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"label": "Sofosbuvir/Velpatasvir",
+"id": "R5000071",
+"effect": "['R5000025', 'R5000006', 'R5000033']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 39,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000072",
+"label": "eszopiclone",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 40,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000073",
+"label": "nelfinavir",
+"effect": "['R5000006', 'R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "TARGET",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 40,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000073",
+"label": "nelfinavir",
+"effect": "['R5000006', 'R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 40,
+"labels": [
+        "Drug"
+      ],
+"properties": {
+"id": "R5000073",
+"label": "nelfinavir",
+"effect": "['R5000006', 'R5000025']",
+"target": "['R5000036']"
+      }
+    },
+    "type(r)": "EFFECT",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1218,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "porcine epidemic diarrhea virus",
+"id": "R5000002"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1219,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Murine coronavirus",
+"id": "R5000003"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 11,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000085",
+"label": "severe, and often fatal, respiratory illness"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 6,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000080",
+"label": "common cold"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 0,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000074",
+"label": "severe pneumonia"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 14,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "gastrointestinal diseases",
+"id": "R5000088"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1251,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000035",
+"label": "E"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1250,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000034",
+"label": "ORF1a"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1253,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000037",
+"label": "ORF1ab"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1262,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000046",
+"label": "ORF1b"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1222,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000006",
+"label": "Coronaviruses"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1225,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat-SL-CoVZX21",
+"id": "R5000009"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1238,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat coronavirus",
+"id": "R5000022"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1220,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat-SL-CoVZX45",
+"id": "R5000004"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 8,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "severe respiratory disease",
+"id": "R5000082"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 3,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000077",
+"label": "severe respiratory diseases in afflicted human patients"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 2,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000076",
+"label": "epidemic"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 19,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000093",
+"label": "SARS"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 44,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000052",
+"label": "TMPRSS2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1253,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000037",
+"label": "ORF1ab"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1251,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000035",
+"label": "E"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1259,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000043",
+"label": "Nsp1"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1255,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000039",
+"label": "N"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1232,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat-SL-CoVZC45",
+"id": "R5000016"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1236,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000020",
+"label": "Bat SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1228,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat-SL-CoVZXC21",
+"id": "R5000012"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1247,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "SARS-CoV-like Coronaviruses",
+"id": "R5000031"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1227,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "murine hepatitis virus",
+"id": "R5000011"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1229,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS CoV W1V1",
+"id": "R5000013"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1231,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000015",
+"label": "sarbeco virus"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1232,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat-SL-CoVZC45",
+"id": "R5000016"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1264,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000048",
+"label": "Nsp7"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1232,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat-SL-CoVZC45",
+"id": "R5000016"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1251,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000035",
+"label": "E"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1233,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat-associated betacoronavirus",
+"id": "R5000017"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1234,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "SARS-CoV BJ01",
+"id": "R5000018"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1221,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARSr-CoV WIV1",
+"id": "R5000005"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1235,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "mouse hepatitis virus",
+"id": "R5000019"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1236,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000020",
+"label": "Bat SARS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1256,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000040",
+"label": "ORF8"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1238,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat coronavirus",
+"id": "R5000022"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1238,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat coronavirus",
+"id": "R5000022"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1238,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat coronavirus",
+"id": "R5000022"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1256,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000040",
+"label": "ORF8"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1231,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000015",
+"label": "sarbeco virus"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1251,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000035",
+"label": "E"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1240,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "SARS-related CoVs",
+"id": "R5000024"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 12,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000086",
+"label": "COVID-19"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 1,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "acute respiratory syndrome",
+"id": "R5000075"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 13,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000087",
+"label": "death"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 15,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "human respiratory disease",
+"id": "R5000089"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 18,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "severe humanrespiratory disease",
+"id": "R5000092"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 7,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000081",
+"label": "severe pneumonia in patients with weaker immune system"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 17,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000091",
+"label": "cough"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 20,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000094",
+"label": "epidemic of acute respiratory syndrome in humans"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 5,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000079",
+"label": "pneumonia"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 0,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000074",
+"label": "severe pneumonia"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 16,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "severe respiratory infection",
+"id": "R5000090"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 9,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"label": "atypical pneumonia",
+"id": "R5000083"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 44,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000052",
+"label": "TMPRSS2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1264,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000048",
+"label": "Nsp7"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1263,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000047",
+"label": "ORF6"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1253,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000037",
+"label": "ORF1ab"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1257,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000041",
+"label": "ORF7a"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1258,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000042",
+"label": "ORF10"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1262,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000046",
+"label": "ORF1b"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1251,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000035",
+"label": "E"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1260,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000044",
+"label": "ORF3a"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1255,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000039",
+"label": "N"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1250,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000034",
+"label": "ORF1a"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1259,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000043",
+"label": "Nsp1"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1256,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000040",
+"label": "ORF8"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1231,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000015",
+"label": "sarbeco virus"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1248,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat coronavirus RaTG13",
+"id": "R5000032"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1220,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat-SL-CoVZX45",
+"id": "R5000004"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1236,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000020",
+"label": "Bat SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1247,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "SARS-CoV-like Coronaviruses",
+"id": "R5000031"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1228,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat-SL-CoVZXC21",
+"id": "R5000012"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1238,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat coronavirus",
+"id": "R5000022"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1246,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat SARS-like Coronaviruses",
+"id": "R5000030"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1245,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat-like SARS coronavirus",
+"id": "R5000029"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1230,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000014",
+"label": "bat SARSr-Cov"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1225,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat-SL-CoVZX21",
+"id": "R5000009"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1232,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat-SL-CoVZC45",
+"id": "R5000016"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1240,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "SARS-related CoVs",
+"id": "R5000024"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1223,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "bat SARS-CoV-like",
+"id": "R5000007"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1242,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000026",
+"label": "lentiviruses"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1242,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000026",
+"label": "lentiviruses"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1243,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "feline coronavirus",
+"id": "R5000027"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1244,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000028",
+"label": "HIV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1246,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Bat SARS-like Coronaviruses",
+"id": "R5000030"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1241,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000025",
+"label": "SARS-CoV-2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1247,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "SARS-CoV-like Coronaviruses",
+"id": "R5000031"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1226,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000010",
+"label": "SARS-CoV"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "SIMILAR",
+    "c": {
+"identity": 1239,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"label": "Beta coronavirus",
+"id": "R5000023"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1252,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000036",
+"label": "Mpro"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1254,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000038",
+"label": "Nsp3"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "PRODUCE",
+    "c": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 43,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000051",
+"label": "DPP4"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "INTERACTION",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 4,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000078",
+"label": "MERS"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 2,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000076",
+"label": "epidemic"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1249,
+"labels": [
+        "Virus"
+      ],
+"properties": {
+"id": "R5000033",
+"label": "MERS-CoV"
+      }
+    },
+    "type(r)": "CAUSE",
+    "c": {
+"identity": 10,
+"labels": [
+        "Disease"
+      ],
+"properties": {
+"id": "R5000084",
+"label": "severe and potential fatal respiratory tract infections"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    },
+    "type(r)": "BINDING",
+    "c": {
+"identity": 45,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000053",
+"label": "ACE2"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    },
+    "type(r)": "BINDING",
+    "c": {
+"identity": 42,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"label": "O-acetylated sialic acid",
+"id": "R5000050"
+      }
+    }
+  },
+  {
+    "a": {
+"identity": 1261,
+"labels": [
+        "VP"
+      ],
+"properties": {
+"id": "R5000045",
+"label": "Spike"
+      }
+    },
+    "type(r)": "BINDING",
+    "c": {
+"identity": 41,
+"labels": [
+        "HP"
+      ],
+"properties": {
+"id": "R5000049",
+"label": "trypsin"
+      }
+    }
+  }
+]

@@ -41,3 +41,19 @@ match (a:VP),(b:HP)
 where a.id='R5000045' and b.id in ['R5000050', 'R5000053', 'R5000049']
 create (a)-[r:BINDING]->(b);
 
+CALL gds.graph.create(
+    'Disease_graph',
+    ['Virus', 'Disease'],
+    {
+        CAUSE: {
+            type: 'CAUSE',
+            properties: {  
+            }
+        }
+    }
+);
+
+CALL gds.nodeSimilarity.stream('Disease_graph')
+YIELD node1, node2, similarity
+RETURN gds.util.asNode(node1).label AS Virus1, gds.util.asNode(node2).label AS Virus2, similarity as Jacard_Score
+ORDER BY Jacard_Score DESCENDING, Virus1, Virus2;

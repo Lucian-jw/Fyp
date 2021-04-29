@@ -60,10 +60,7 @@ module.exports = {
   
     new Webpack.EnvironmentPlugin({
       'NEO4J_URI': 'neo4j://localhost:7687',
-      'NEO4J_DATABASE': 'covid - default',
-      'NEO4J_USER': 'neo4j',
-      'NEO4J_PASSWORD': '1317Qscgy55',
-      'NEO4J_VERSION': ''
+      'NEO4J_DATABASE': 'fyp - default'
     })
   ],
 

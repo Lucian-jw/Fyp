@@ -1,0 +1,151 @@
+﻿Virus1,Virus2,similarity
+HIV,feline coronavirus,1
+HIV,porcine epidemic diarrhea virus,1
+HIV,sarbeco virus,1
+Murine coronavirus,mouse hepatitis virus,1
+Murine coronavirus,murine hepatitis virus,1
+SARS-related CoVs,bat SARS CoV W1V1,1
+SARS-related CoVs,bat-associated betacoronavirus,1
+bat SARS CoV W1V1,SARS-related CoVs,1
+bat SARS CoV W1V1,bat-associated betacoronavirus,1
+bat-associated betacoronavirus,SARS-related CoVs,1
+bat-associated betacoronavirus,bat SARS CoV W1V1,1
+feline coronavirus,HIV,1
+feline coronavirus,porcine epidemic diarrhea virus,1
+feline coronavirus,sarbeco virus,1
+mouse hepatitis virus,Murine coronavirus,1
+mouse hepatitis virus,murine hepatitis virus,1
+murine hepatitis virus,Murine coronavirus,1
+murine hepatitis virus,mouse hepatitis virus,1
+porcine epidemic diarrhea virus,HIV,1
+porcine epidemic diarrhea virus,feline coronavirus,1
+porcine epidemic diarrhea virus,sarbeco virus,1
+sarbeco virus,HIV,1
+sarbeco virus,feline coronavirus,1
+sarbeco virus,porcine epidemic diarrhea virus,1
+HIV,lentiviruses,0.5
+feline coronavirus,lentiviruses,0.5
+lentiviruses,HIV,0.5
+lentiviruses,feline coronavirus,0.5
+lentiviruses,porcine epidemic diarrhea virus,0.5
+lentiviruses,sarbeco virus,0.5
+porcine epidemic diarrhea virus,lentiviruses,0.5
+sarbeco virus,lentiviruses,0.5
+Bat SARS-CoV,Bat coronavirus,0.333333333
+Bat coronavirus,Bat SARS-CoV,0.333333333
+Bat coronavirus,HIV,0.333333333
+Bat coronavirus,feline coronavirus,0.333333333
+Bat coronavirus,porcine epidemic diarrhea virus,0.333333333
+Bat coronavirus,sarbeco virus,0.333333333
+HIV,Bat coronavirus,0.333333333
+feline coronavirus,Bat coronavirus,0.333333333
+porcine epidemic diarrhea virus,Bat coronavirus,0.333333333
+sarbeco virus,Bat coronavirus,0.333333333
+Bat coronavirus,lentiviruses,0.25
+Beta coronavirus,HIV,0.25
+Beta coronavirus,feline coronavirus,0.25
+Beta coronavirus,porcine epidemic diarrhea virus,0.25
+Beta coronavirus,sarbeco virus,0.25
+HIV,Beta coronavirus,0.25
+feline coronavirus,Beta coronavirus,0.25
+lentiviruses,Bat coronavirus,0.25
+porcine epidemic diarrhea virus,Beta coronavirus,0.25
+sarbeco virus,Beta coronavirus,0.25
+Bat-SL-CoVZC45,Beta coronavirus,0.2
+Beta coronavirus,Bat-SL-CoVZC45,0.2
+Beta coronavirus,lentiviruses,0.2
+lentiviruses,Beta coronavirus,0.2
+Beta coronavirus,Coronaviruses,0.1875
+Coronaviruses,Beta coronavirus,0.1875
+MERS-CoV,SARS-CoV,0.172413793
+SARS-CoV,MERS-CoV,0.172413793
+Bat coronavirus,Beta coronavirus,0.166666667
+Beta coronavirus,Bat coronavirus,0.166666667
+Beta coronavirus,MERS-CoV,0.166666667
+HIV,bat SARS-CoV-like,0.166666667
+MERS-CoV,Beta coronavirus,0.166666667
+bat SARS-CoV-like,HIV,0.166666667
+bat SARS-CoV-like,feline coronavirus,0.166666667
+bat SARS-CoV-like,porcine epidemic diarrhea virus,0.166666667
+bat SARS-CoV-like,sarbeco virus,0.166666667
+feline coronavirus,bat SARS-CoV-like,0.166666667
+porcine epidemic diarrhea virus,bat SARS-CoV-like,0.166666667
+sarbeco virus,bat SARS-CoV-like,0.166666667
+Coronaviruses,SARS-CoV,0.147058824
+SARS-CoV,Coronaviruses,0.147058824
+bat SARS-CoV-like,lentiviruses,0.142857143
+lentiviruses,bat SARS-CoV-like,0.142857143
+Coronaviruses,MERS-CoV,0.136363636
+MERS-CoV,Coronaviruses,0.136363636
+Coronaviruses,SARS-CoV-2,0.133333333
+SARS-CoV-2,Coronaviruses,0.133333333
+Bat coronavirus,bat SARS-CoV-like,0.125
+bat SARS-CoV-like,Bat coronavirus,0.125
+Beta coronavirus,SARS-CoV,0.12
+SARS-CoV,Beta coronavirus,0.12
+bat SARS-CoV-like,Beta coronavirus,0.111111111
+HIV,MERS-CoV,0.1
+MERS-CoV,HIV,0.1
+MERS-CoV,Murine coronavirus,0.1
+MERS-CoV,feline coronavirus,0.1
+MERS-CoV,mouse hepatitis virus,0.1
+MERS-CoV,murine hepatitis virus,0.1
+MERS-CoV,porcine epidemic diarrhea virus,0.1
+MERS-CoV,sarbeco virus,0.1
+Murine coronavirus,MERS-CoV,0.1
+SARS-CoV,SARS-CoV-2,0.1
+SARS-CoV-2,SARS-CoV,0.1
+feline coronavirus,MERS-CoV,0.1
+mouse hepatitis virus,MERS-CoV,0.1
+murine hepatitis virus,MERS-CoV,0.1
+porcine epidemic diarrhea virus,MERS-CoV,0.1
+sarbeco virus,MERS-CoV,0.1
+lentiviruses,MERS-CoV,0.090909091
+Bat coronavirus,MERS-CoV,0.083333333
+Bat coronavirus,SARS-CoV,0.08
+SARS-CoV,Bat coronavirus,0.08
+Coronaviruses,HIV,0.066666667
+Coronaviruses,Murine coronavirus,0.066666667
+Coronaviruses,feline coronavirus,0.066666667
+Coronaviruses,mouse hepatitis virus,0.066666667
+Coronaviruses,murine hepatitis virus,0.066666667
+Coronaviruses,sarbeco virus,0.066666667
+HIV,Coronaviruses,0.066666667
+Murine coronavirus,Coronaviruses,0.066666667
+bat SARS-CoV-like,MERS-CoV,0.066666667
+feline coronavirus,Coronaviruses,0.066666667
+mouse hepatitis virus,Coronaviruses,0.066666667
+murine hepatitis virus,Coronaviruses,0.066666667
+porcine epidemic diarrhea virus,Coronaviruses,0.066666667
+sarbeco virus,Coronaviruses,0.066666667
+Bat-SL-CoVZC45,Coronaviruses,0.0625
+lentiviruses,Coronaviruses,0.0625
+SARS-CoV-2,Beta coronavirus,0.055555556
+SARS-CoV-2,MERS-CoV,0.05
+bat SARS-CoV-like,Coronaviruses,0.05
+HIV,SARS-CoV,0.041666667
+Murine coronavirus,SARS-CoV,0.041666667
+SARS-CoV,Murine coronavirus,0.041666667
+SARS-CoV,feline coronavirus,0.041666667
+SARS-CoV,mouse hepatitis virus,0.041666667
+SARS-CoV,murine hepatitis virus,0.041666667
+SARS-CoV,sarbeco virus,0.041666667
+feline coronavirus,SARS-CoV,0.041666667
+mouse hepatitis virus,SARS-CoV,0.041666667
+murine hepatitis virus,SARS-CoV,0.041666667
+porcine epidemic diarrhea virus,SARS-CoV,0.041666667
+sarbeco virus,SARS-CoV,0.041666667
+Bat-SL-CoVZC45,SARS-CoV,0.04
+lentiviruses,SARS-CoV,0.04
+Bat-SL-CoVZC45,SARS-CoV-2,0.037735849
+SARS-CoV-2,Bat-SL-CoVZC45,0.037735849
+SARS-CoV-2,Bat coronavirus,0.037037037
+bat SARS-CoV-like,SARS-CoV,0.034482759
+Bat SARS-CoV,SARS-CoV-2,0.018867925
+Murine coronavirus,SARS-CoV-2,0.018867925
+SARS-CoV-2,Bat SARS-CoV,0.018867925
+SARS-CoV-2,mouse hepatitis virus,0.018867925
+SARS-CoV-2,murine hepatitis virus,0.018867925
+SARS-CoV-2,sarbeco virus,0.018867925
+mouse hepatitis virus,SARS-CoV-2,0.018867925
+murine hepatitis virus,SARS-CoV-2,0.018867925
