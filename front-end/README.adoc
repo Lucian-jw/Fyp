@@ -1,0 +1,9 @@
+Neo4j Covid-19 FYP
+
+//$ npm install
+
+Start Neo4j Browser
+
+//$ npm start
+
+Open http://localhost:8080

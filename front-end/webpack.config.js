@@ -59,7 +59,7 @@ module.exports = {
       filename: 'visualization',
       template: 'src/assets/d3-visualization.html'
     }),
-  
+  //change the database name,username and password to yours and run (details to be found in readme)
     new Webpack.EnvironmentPlugin({
       'NEO4J_URI': 'neo4j://localhost:7687',
       'NEO4J_DATABASE': 'covid - default',
