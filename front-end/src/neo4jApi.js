@@ -4,17 +4,22 @@ const Link = require('./models/Link');
 const Similarity = require('./models/Similarity');
 const _ = require('lodash');
 
-const neo4j = window.neo4j;
-const neo4jUri = process.env.NEO4J_URI;
-const neo4jVersion = process.env.NEO4J_VERSION;
-let database = process.env.NEO4J_DATABASE;
-if (!neo4jVersion.startsWith("4")) {
+//const neo4j = window.neo4j;
+const neo4j = require('neo4j-driver')
+//const neo4jUri = process.env.NEO4J_URI;
+//const neo4jVersion = process.env.NEO4J_VERSION;
+//let database = process.env.NEO4J_DATABASE;
+/*if (!neo4jVersion.startsWith("4")) {
   database = null;
-}
+}*/
+const neo4jUri ='neo4j://localhost:7687';
+let database ='fyp';
 const driver = neo4j.driver(
   'neo4j://localhost:7687',
-    neo4j.auth.basic('neo4j', '1317Qscgy55'),
+   neo4j.auth.basic('neo4j', '1317Qscgy55'),
 );
+
+
 
 console.log(`Database running at ${neo4jUri}`) 
 
