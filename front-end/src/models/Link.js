@@ -1,11 +1,13 @@
 const _ = require('lodash');
 
-function Link(name,id ) {
+function Link(aid,bid,name,link) {
+  
   _.extend(this, {
     
     label : name,
-    id:id,
-    link_type:'Cause'
+    aid:aid,
+    bid:bid,
+    link_type:link
   });
 }
 

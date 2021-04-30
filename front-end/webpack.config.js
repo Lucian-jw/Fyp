@@ -43,21 +43,23 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({template: 'src/assets/index.html'}),
+    new HtmlWebpackPlugin({
+      filename: 'index',
+      template: 'src/assets/index.html'}),
     
     new HtmlWebpackPlugin({
-      filename: 'frontpage.html',
+      filename: 'frontpage',
       template: 'src/assets/frontpage.html'
   }),
     new HtmlWebpackPlugin({
-      filename: 'statistics.html',
+      filename: 'statistics',
       template: 'src/assets/statistics.html'
   }),
     new HtmlWebpackPlugin({
-      filename: 'd3-visualization.html',
+      filename: 'visualization',
       template: 'src/assets/d3-visualization.html'
     }),
-  
+  //change the database name,username and password to yours and run (details to be found in readme)
     new Webpack.EnvironmentPlugin({
       'NEO4J_URI': 'neo4j://localhost:7687',
       'NEO4J_DATABASE': 'fyp - default'
