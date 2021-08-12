@@ -19,9 +19,10 @@ npm install webpack
 neo4j console
 npm start
 ```
-go to localhost:8080/visualization and this page would appear 
-Screenshot:  
-<img src="screenshot.png" width="240">
+Acess to *localhost:8080/visualization* and this page would appear 
+
+
+<img src="demo.gif" width="600">
 
 
 
